@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: auto;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 無語意的block -->
+    <div class="container">
+        <form action="" method="get">
+            <fieldset>
+                <legend>個人資料表</legend>
+
+                <p>
+                    <label for="name">中文姓名</label>
+                    <input type="text" name="" id="name">
+                </p>
+                <p>
+                    <label for="name">英文姓名</label>
+                    <input type="text" name="" id="name">
+                </p>
+                <p>
+                    <label for="id">身分證字號</label>
+                    <input type="text" name="" id="id">
+                </p>
+                <!-- radio 單選 -->
+                性別
+                <input type="radio" name="gender" id="" value="男">
+                <label for="">男</label>
+                <input type="radio" name="gender" id="" value="女">
+                <label for="">女</label>
+                <p>
+                    <label for="age">年齡</label>
+                    <input type="text" name="" id="age">
+                </p>
+                <label for="date">出生日期</label>
+                <input type="date" name="" id="" value="2024-04-02">
+                <p>
+                    <label for="mobile">聯絡電話</label>
+                    <input type="text" name="" id="mobile">
+                </p>
+
+                <p>
+                    <label for="address">通訊地址</label>
+                    <input type="text" name="" id="address">
+                </p>
+
+
+                <hr>
+                <!-- 選日期 -->
+                <label for="mySelect">最高學歷</label>
+                <select name="" id="">
+                    <option value="">高中</option>
+                    <option value="">大學</option>
+                    <option value="">碩士</option>
+                </select>
+                <p>
+                    <label for="school">學校</label>
+                    <input type="text" name="" id="school">
+                </p>
+
+                <p>
+                    <label for="department">科系</label>
+                    <input type="text" name="" id="department">
+                </p>
+
+                <hr>
+
+                【電腦技能】較專精之電腦軟硬體、應用系統及程式語言
+                <!-- checkbox多選 -->
+                <label for="">電腦技能</label><br>
+                <input type="checkbox" name="love[]" id="" value="html/css">
+                <label for="">html/css</label>
+                <input type="checkbox" name="love[]" id="" value="js">
+                <label for="">js</label>
+                <input type="checkbox" name="love[]" id="" value="php">
+                <label for="">php</label>
+                <input type="checkbox" name="love[]" id="" value="ai">
+                <label for="">ai</label>
+                <input type="checkbox" name="love[]" id="" value="ps">
+                <label for="">ps</label>
+                <input type="checkbox" name="love[]" id="" value="word">
+                <label for="">word</label>
+                <input type="checkbox" name="love[]" id="" value="excel">
+                <label for="">excel</label>
+
+
+
+                <!-- textarea 多行文字 -->
+                <hr>
+                自我評價<br>
+                <textarea name="" id="" cols="30" rows="10">
+
+            </textarea>
+                <p>
+                    <input type="submit" value="提交">
+                </p>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
