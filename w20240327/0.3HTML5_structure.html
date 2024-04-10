@@ -1,0 +1,40 @@
+<!-- 宣告 HTML5 文件 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head 給瀏覽器看的資訊 -->
+
+<head>
+    <!-- UTF8 字元編碼，確保瀏覽網頁正常，例如我們使用中文，沒有這項設定，他國人士瀏覽裝置環境會是顯示亂碼 -->
+    <meta charset="UTF-8">
+    <!-- RWD 專用的一行，確保各種裝置瀏覽縮放比例100% -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="這是我的第一個網頁">
+    <title>這是我第一個網頁</title>
+    <!-- 外部樣式表 -->
+    <link rel="stylesheet" href="example.css">
+    <style>
+        /* 本文件的樣式 */
+        body {
+            background-color: rgb(186, 212, 198);
+        }
+    </style>
+</head>
+
+
+<!-- 給逛網站的使用者看的資訊 -->
+
+<body>
+    <button id="btn">點我一下</button>
+    <!-- 外部 js 檔案 -->
+    <script src="example.js"></script>
+    <!-- 本文件 js -->
+    <script>
+        const btn = document.getElementById('btn')
+        btn.onclick = function () {
+            alert('Hello World!')
+        }
+    </script>
+</body>
+
+</html>
