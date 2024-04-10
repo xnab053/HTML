@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            border-collapse: collapse;
+        }
+
+        tr,
+        td,
+        th {
+            /*height: 300px;*/
+            border: 1px solid black;
+            /*border-collapse: collapse;*/
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        .box1 {
+            background-color: rgb(173, 164, 250);
+            height: 300px;
+        }
+
+        .box21 {
+            background-color: rgb(190, 242, 255);
+            height: 300px;
+        }
+
+        .box22 {
+            background-color: rgb(182, 207, 254);
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td colspan="2">
+                <div class="box1">Lorem ipsum dolor sit amet.</div>
+                <!-- 1 -->
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="box21">Lorem ipsum dolor sit amet.</div>
+                <!-- 21 -->
+            </td>
+            <td>
+                <div class="box22">Lorem ipsum dolor sit amet.</div>
+                <!-- 22 -->
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <table>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Lorem ipsum dolor sit amet.
+                <br>
+                Lorem ipsum dolor sit amet.
+                <br>
+                Lorem ipsum dolor sit amet.
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>amy</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>amy</td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
