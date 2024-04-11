@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+
+        }
+
+        tr,
+        td,
+        th {
+            border: 1px solid black;
+
+        }
+
+        .price {
+            text-align: left;
+        }
+
+        .price::before {
+            content: '$';
+        }
+
+        .price::after {
+            content: '元';
+        }
+
+        /* odd 奇數 even 偶數 */
+        tr:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        /* td 單格 tr 整行 */
+        td:hover {
+            background-color: paleturquoise;
+            font-size: x-large;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <th width="15%">ID</th>
+            <th width="15%">商品名稱</th>
+            <th width="15%">價格</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>咖啡</td>
+            <td class="price">100</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>牛奶</td>
+            <td class="price">100</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>紅茶</td>
+            <td class="price">100</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>綠茶</td>
+            <td class="price">100</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>花茶</td>
+            <td class="price">100</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
