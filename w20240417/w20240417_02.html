@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 300px;
+            background-color: bisque;
+            background-image: url("https://picsum.photos/100/150.webp");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-size: cover;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 圖片 方法1 img -->
+    <h3>img</h3>
+    <img src="https://picsum.photos/200/300.webp" alt="">
+    <br>
+    <hr>
+    <br>
+
+    <!-- 圖片 方法2 bg-image -->
+    <h3>bg image</h3>
+    <div class="box">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, voluptatum.</p>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <!-- box include img -->
+    <div id="box2">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <img src="https://picsum.photos/200/300.webp" alt="">
+    </div>
+</body>
+
+</html>

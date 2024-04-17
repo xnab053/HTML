@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            position: relative;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(96, 125, 117);
+        }
+
+        .box:hover {
+            width: 100px;
+            height: 100px;
+            background-color: rgb(238, 229, 176);
+        }
+
+        .box1 {
+            position: fixed;
+            right: 50px;
+            bottom: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(159, 201, 82);
+        }
+
+        .box-out {
+            position: relative;
+            left: 50px;
+            width: 400px;
+            height: 400px;
+            background-color: rgb(194, 213, 233);
+        }
+
+        .box-in {
+            position: absolute;
+            right: 50px;
+            bottom: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(46, 102, 166);
+        }
+
+        .box-in2 {
+            position: absolute;
+            right: 50px;
+            top: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(7, 21, 37);
+        }
+
+        .box-in3 {
+            position: absolute;
+            left: 50px;
+            bottom: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(23, 118, 227);
+        }
+
+        .box-in4 {
+            position: absolute;
+            left: 50px;
+            top: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: rgb(23, 118, 227);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+
+    <div class="box1"></div>
+
+    <br>
+    <hr><br>
+
+    <div class="box-out">
+        <div class="box-in"></div>
+        <div class="box-in2"></div>
+        <div class="box-in3"></div>
+        <div class="box-in4"></div>
+    </div>
+</body>
+
+
+</html>
