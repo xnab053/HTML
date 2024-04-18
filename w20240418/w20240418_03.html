@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>圓錐漸層</title>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 200px;
+            background-image: conic-gradient(rgb(185, 185, 255), rgb(89, 89, 128));
+        }
+
+        #div2 {
+            width: 200px;
+            height: 200px;
+            /* background-image: conic-gradient(red 270deg, yellow); */
+            background-image: conic-gradient(rgb(203, 255, 203) 270deg, rgb(66, 107, 66));
+        }
+
+        #div3 {
+            width: 200px;
+            height: 200px;
+            background-image: conic-gradient(rgb(255, 255, 190) 50%, rgb(133, 117, 83) 50%);
+        }
+
+        #div4 {
+            width: 200px;
+            height: 200px;
+            /* at 設定圓心位置 */
+            background-image: conic-gradient(at right top, rgb(246, 215, 254), rgb(127, 83, 133));
+        }
+
+        #div5 {
+            width: 200px;
+            height: 200px;
+            /* from 設定第一個顏色的開始角度 */
+            background-image: conic-gradient(from 90deg, rgb(215, 240, 254), rgb(68, 144, 184));
+        }
+
+        #div6 {
+            width: 200px;
+            height: 200px;
+            background-image: repeating-conic-gradient(rgb(215, 240, 254) 0deg, rgb(68, 144, 184) 20deg, rgb(68, 144, 184) 20deg, rgb(215, 240, 254) 45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1"></div><br>
+    <div id="div2"></div><br>
+    <div id="div3"></div><br>
+    <div id="div4"></div><br>
+    <div id="div5"></div><br>
+    <div id="div6"></div><br>
+</body>
+
+</html>

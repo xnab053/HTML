@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>放射性漸層</title>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 200px;
+            /* radial-gradient 放射性漸層 */
+            background-image: radial-gradient(rgb(204, 232, 250), rgb(187, 166, 246));
+        }
+
+        #div2 {
+            width: 200px;
+            height: 200px;
+            background-image: radial-gradient(rgb(232, 255, 129) 80%, rgb(173, 254, 193));
+        }
+
+        #div3 {
+            width: 200px;
+            height: 200px;
+            background-image: radial-gradient(rgb(255, 255, 255) 50%, rgb(0, 0, 0) 50%);
+        }
+
+        #div4 {
+            width: 200px;
+            height: 200px;
+            /* 
+            radial-gradient( 形狀 尺寸 at 位置 , 顏色 )
+            形狀 circle ellipse
+            circle 尺寸:一個參數當半徑
+            ellipse 尺寸:兩個參數代表寬高
+            */
+            /* background-image: radial-gradient(ellipse 100px 50px at right 50px, red, pink); */
+            background-image: radial-gradient(circle 100px at left 50px, rgb(120, 108, 255), rgb(174, 185, 248));
+        }
+
+        #div5 {
+            width: 300px;
+            height: 200px;
+            /* 
+            圓形尺寸
+            closest-corner 最近的角
+            closest-side 最近的邊
+            farthest-corner 最遠的角
+            farthest-side 最遠的邊 
+            */
+            background-image: radial-gradient(circle farthest-corner at 450px 50px, rgb(255, 229, 229), rgb(126, 91, 146));
+        }
+
+        #div6 {
+            width: 300px;
+            height: 200px;
+            background-image: repeating-radial-gradient(rgb(255, 229, 229), rgb(182, 144, 205)20px);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="div1"></div><br>
+    <div id="div2"></div><br>
+    <div id="div3"></div><br>
+    <div id="div4"></div><br>
+    <div id="div5"></div><br>
+    <div id="div6"></div><br>
+</body>
+
+</html>
