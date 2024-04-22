@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row {
+            clear: both;
+
+        }
+
+        .content {
+            float: left;
+            width: 25%;
+        }
+
+        .card {
+            position: relative;
+            padding: 20px;
+            width: 100%;
+            height: 50vh;
+            background-color: rgb(34, 35, 61);
+            border: 1px solid white;
+        }
+
+        .card-img {
+            margin: auto;
+            width: 90%;
+            height: 45%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .card-img>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .card-img>.card-logo {
+            position: absolute;
+            top: 3%;
+            right: 12%;
+            width: 70px;
+            height: 70px;
+        }
+
+        .card-img>.card-logo:hover {
+            width: 80px;
+            height: 80px;
+            transition: 1s;
+        }
+
+        .card-text {
+            margin: auto;
+            padding: 10px;
+            margin-top: 20px;
+            width: 90%;
+            height: 50%;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="content">
+                <div class="card box1">
+                    <div class="card-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSG94wFNThSAAek-GO6zkHB60YwXv_QOVffA&s"
+                            alt="">
+                        <img src="https://img.alicdn.com/imgextra/i1/786646461/O1CN01TIaZyU1xbBuJ8ULes_!!2-item_pic.png"
+                            alt="" class="card-logo">
+                    </div>
+                    <div class="card-text">
+                        <h3>Pochacco（日語：ポチャッコ）</h3>
+                        <p>生日: 1989/2/29 <br>
+                            物種：狗 <br>
+                            出生地：軟綿綿城郊外的樹鶯橫丁 <br>
+                            身高：4個他最愛的香蕉冰淇淋杯子高<br>
+                            體重：跟軟綿綿城田中採收的3根胡蘿蔔一樣<br>
+                            性格：好奇心旺盛、有點漫不經心&一點愛管閒事<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="card box2">
+                    <div class="card-img">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCfpGgt1CsWSSP25v-f4Q6GKp-rPS55HAmKs51iGuud_rrg2KqwI8dOVObKpypVIJLsNw&usqp=CAU"
+                            alt="" class="">
+                        <img src="https://img.alicdn.com/imgextra/i1/786646461/O1CN01TIaZyU1xbBuJ8ULes_!!2-item_pic.png"
+                            alt="" class="card-logo">
+                    </div>
+                    <div class="card-text">
+                        <h3>Pompompurin（日語：ポンポンプリン）</h3>
+                        <p>生日: 1996/4/16 <br>
+                            物種：狗 <br>
+                            特徵：看起來圓圓胖胖的<br>
+                            興趣：蒐集鞋子(一對鞋子中的一隻)、睡覺、做布丁體操、吃東西<br>
+                            住處：小主人姐姐家的玄關<br>
+                            性格：悠閒自在、頭腦遲鈍、饞嘴貪吃 <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="card box3">
+                    <div class="card-img">
+                        <img src="https://p2.bahamut.com.tw/B/2KU/35/0247b2c2cd99dfd3152a4007a51odk75.WEBP?v=1703218128807"
+                            alt="">
+                        <img src="https://img.alicdn.com/imgextra/i1/786646461/O1CN01TIaZyU1xbBuJ8ULes_!!2-item_pic.png"
+                            alt="" class="card-logo">
+                    </div>
+                    <div class="card-text">
+                        <h3>Cinnamoroll（日語：シナモロール）</h3>
+                        <p>生日: 2002/3/6 <br>
+                            物種：狗 <br>
+                            出生地：遙遠天空的白雲上<br>
+                            居住地：Café Cinnamon咖啡廳<br>
+                            興趣：在咖啡廳上的陽台睡午覺<br>
+                            專長：用大耳朵飛翔<br>
+                            性格：乖巧、沉靜、喜歡與人相處<br>
+                            最喜歡食物：Café Cinnamon的肉桂捲<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="card box4">
+                    <div class="card-img">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="">
+                        <img src="https://img.alicdn.com/imgextra/i1/786646461/O1CN01TIaZyU1xbBuJ8ULes_!!2-item_pic.png"
+                            alt="" class="card-logo">
+                    </div>
+                    <div class="card-text">
+                        <h3>三麗鷗（日語：サンリオ Sanrio）</h3>
+                        <p>三麗鷗是一家日本公司，設計及生產Hello Kitty等卡通形象精品。 <br>
+                            於1960年8月10日由原在山梨縣任職的公務員辻信太郎辭職後創立，初期名為「山梨絲綢中心株式會社」，經營絲製品。1973年改為設計卡通人物，並把公司名稱更改為「三麗鷗株式會社」。
+                            <br>
+                            2020年6月12日，三麗鷗宣布高齡92歲的創辦人暨社長（總經理）辻信太郎自同年7月1日起升任會長（董事長），因長子於2013年因心臟病與世長辭，由其31歲的孫子辻朋邦接任社長。<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
