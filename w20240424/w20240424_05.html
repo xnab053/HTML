@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            margin-top: 20px;
+        }
+
+        .box1 {
+            background-color: rgb(212, 162, 101);
+            overflow: hidden;
+        }
+
+        .box2 {
+            background-color: rgb(174, 200, 247);
+            overflow: auto;
+        }
+
+        .box3 {
+            background-color: rgb(144, 114, 172);
+            /* overflow: auto; */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .box3>img {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 100%;
+        }
+
+        .box4 {
+            background-image: url("https://picsum.photos/400/400/?random=10");
+            background-size: cover;
+            background-position: 150px;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perferendis adipisci vero
+        praesentium dolorum voluptatum saepe, itaque ea impedit accusamus natus, obcaecati blanditiis possimus voluptas
+        unde, quidem asperiores facere. Laboriosam dolore facilis itaque maiores illo nisi repudiandae accusantium magni
+        aut ipsum recusandae eveniet aspernatur ad at maxime expedita necessitatibus, dicta a officia. Aut explicabo
+        rerum facilis accusantium molestiae corporis eaque officiis, laboriosam minus! Nisi vitae quae ex pariatur
+        distinctio cupiditate dignissimos sapiente molestias amet velit fuga magnam beatae repellat dolorum itaque
+        deserunt omnis nemo quia, id dolore aperiam accusamus commodi. Maiores corrupti, architecto vitae sunt error
+        culpa recusandae eveniet ut?
+    </div>
+
+    <div class="box box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum perferendis adipisci vero
+        praesentium dolorum voluptatum saepe, itaque ea impedit accusamus natus, obcaecati blanditiis possimus voluptas
+        unde, quidem asperiores facere. Laboriosam dolore facilis itaque maiores illo nisi repudiandae accusantium magni
+        aut ipsum recusandae eveniet aspernatur ad at maxime expedita necessitatibus, dicta a officia. Aut explicabo
+        rerum facilis accusantium molestiae corporis eaque officiis, laboriosam minus! Nisi vitae quae ex pariatur
+        distinctio cupiditate dignissimos sapiente molestias amet velit fuga magnam beatae repellat dolorum itaque
+        deserunt omnis nemo quia, id dolore aperiam accusamus commodi. Maiores corrupti, architecto vitae sunt error
+        culpa recusandae eveniet ut?
+    </div>
+
+    <div class="box box3">
+        <img src="https://picsum.photos/400/400/?random=11" alt="">
+    </div>
+
+    <div class="box box4">
+        <!-- <img src="https://picsum.photos/400/400/?random=10" alt=""> -->
+    </div>
+</body>
+
+</html>

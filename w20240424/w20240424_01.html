@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        span {
+            display: block;
+            color: red;
+            background-color: antiquewhite;
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+        }
+
+        img {
+            display: block;
+            width: 200px;
+            height: 200px;
+        }
+
+        .row {
+            clear: both;
+        }
+
+        .box {
+            float: right;
+            width: 10%;
+        }
+
+        a {
+            background-image: url("https://picsum.photos/300/200/?random=10");
+            background-size: cover;
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+            margin: auto;
+            margin-top: 10px;
+            text-align: center;
+            padding-top: 38px;
+            text-decoration: none;
+            border: 1px solid antiquewhite;
+            border-radius: 10px;
+        }
+
+        .box-block {
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+        }
+
+        h1 {
+            width: 300px;
+            height: 300px;
+            background-color: lightpink;
+        }
+
+        /* p {
+            width: 300px;
+            height: 300px;
+            background-color: azure;
+        } */
+
+        input {
+            /* display: inline-block; */
+            width: 300px;
+            height: 50px;
+            background-color: rgb(217, 239, 247);
+        }
+
+        input:hover {
+            font-size: x-large;
+            display: inline-block;
+            width: 330px;
+            height: 55px;
+            background-color: antiquewhite;
+        }
+
+        button {
+            /* display: inline-block;
+            display: block; */
+            width: 300px;
+            height: 300px;
+            background-color: beige;
+            margin-top: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- inline -->
+    <div class="container">
+        <h3>inline</h3>
+        <h4>不換行 不變大</h4>
+        <h5>span、img、input、a...</h5>
+        <!-- Lorem ipsum <span>dolor</span> sit amet consectetur adipisicing elit. Placeat, expedita.
+        <br>
+        <img src=" https://picsum.photos/300/200/?random=10" alt="">
+        <img src=" https://picsum.photos/300/200/?random=10" alt="">
+        <img src=" https://picsum.photos/300/200/?random=10" alt=""> -->
+
+        <!-- <div class="row">
+            <div class="box">
+                <a href="">
+                    <img src="https://picsum.photos/300/200/?random=10" alt="">
+                </a>
+                <a href="">about</a>
+                <a href="">other</a>
+            </div>
+        </div> -->
+
+        <p><input type="text" name="" id=""></p>
+        <p><input type="text" name="" id=""></p>
+        <p><input type="text" name="" id=""></p>
+    </div>
+
+    <!-- block -->
+    <div class="container">
+        <h3>block</h3>
+        <h4>換行 變大</h4>
+        <h5>div、h1、ul、li、p、header、footer、nav...</h5>
+
+        <div class="box-block"></div>
+        <h1>h1 Lorem ipsum dolor sit amet.</h1>
+        <p>p Lorem ipsum dolor sit amet.</p>
+
+        <button>btn1</button>
+        <button>btn2</button>
+        <button>btn3</button>
+    </div>
+
+
+    <!-- inline-block -->
+
+</body>
+
+</html>
