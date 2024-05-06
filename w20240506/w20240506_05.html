@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: auto;
+            width: 80%;
+            height: 90vh;
+            background-color: antiquewhite;
+        }
+
+        .flex-container {
+            margin: auto;
+            width: 80%;
+            height: 95%;
+            background-color: aliceblue;
+
+            display: flex;
+            /* 變直的 */
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: antiquewhite;
+        }
+
+        .item3 {
+            flex-basis: 200px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-container">
+            <div class="item">
+                1
+            </div>
+            <div class="item item-hide">
+                2
+            </div>
+            <div class="item item3">
+                3
+            </div>
+            <div class="item item-hide">
+                4
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
