@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            /* display: flex;
+            align-items: center; */
+            width: 80%;
+            height: 90vh;
+            background-color: antiquewhite;
+            margin: auto;
+        }
+
+        .flex-container {
+            width: 80%;
+            height: 90%;
+            background-color: bisque;
+            margin: auto;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .item {
+            /* 置中 */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            width: 300px;
+            height: 300px;
+            background-color: rgb(117, 104, 88);
+            margin-left: 50px;
+            /* 置中 */
+            /* text-align: center;
+            padding-top: 140px; */
+        }
+
+        .item-hide {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex-container">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item item-hide">6</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
