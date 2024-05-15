@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>
+        A heading
+    </h1>
+
+    <a href="" id="mya">Link text</a>
+
+    <p class="myp">Lorem ipsum dolor sit amet.</p>
+
+    <script>
+        $(document).ready(function () {
+            // h1 -> red
+            $('h1').css('color', 'red');
+            $('#mya').css('color', 'pink');
+            $('.myp').css('color', 'green');
+
+            $('h1').css('font-size', '36px');
+            $('#mya').css('font-size', '24px');
+            $('.myp').css('font-size', '24px');
+
+            $('h1').css('background', '#ccc');
+            $('#mya').css('background', '#ccc');
+            $('.myp').css('background', '#ccc');
+        });
+    </script>
+</body>
+
+</html>

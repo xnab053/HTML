@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .my-red {
+            color: blanchedalmond;
+        }
+
+        .my-bgcolor {
+            background-color: rgb(151, 136, 123);
+        }
+
+        .my-style {
+            color: blanchedalmond;
+            background-color: rgb(151, 136, 123);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        A heading
+    </h1>
+
+    <a href="" id="mya">Link text</a>
+
+    <p class="myp">Lorem ipsum dolor sit amet.</p>
+
+    <script>
+        $(document).ready(function () {
+
+            // $('h1').attr('class', 'my-red my-bgcolor');
+            // $('a').attr('class', 'my-red my-bgcolor');
+            // $('p').attr('class', 'my-red my-bgcolor');
+
+            $('h1').attr('class', 'my-style');
+            $('a').attr('class', 'my-style');
+            $('p').attr('class', 'my-style');
+
+        });
+    </script>
+</body>
+
+</html>
