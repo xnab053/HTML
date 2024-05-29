@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col">
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-outline-primary alerBtn" data-div="alert-primary"
+                        data-strong="Primary!" id="primaryBtn">Primary</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-outline-secondary alerBtn" data-div="alert-secondary"
+                        data-strong="Secondary!" id="secondaryBtn">Secondary</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-grid gap-2">
+                    <button type="button" class="btn btn-outline-success alerBtn" data-div="alert-success"
+                        data-strong="Success!" id="successBtn">Success</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5" id="alertBox">
+        <div class="alert alert-primary alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>Primary!</strong> Indicates an important action.
+        </div>
+        <div class="alert alert-secondary alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>Secondary!</strong> Indicates a slightly less important action.
+        </div>
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            <strong>Success!</strong> This alert box could indicate a successful or positive action.
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // 方法一
+        $(document).ready(function () {
+            // const primaryBtn = $('#primaryBtn');
+            // const secondaryBtn = $('#secondaryBtn');
+            // const successBtn = $('#successBtn');
+            const alertBox = $('#alertBox');
+            const alerBtn = $('.alerBtn');
+
+            // console.log('primaryBtn', primaryBtn);
+            // console.log('secondaryBtn', secondaryBtn);
+            // console.log('successBtn', successBtn);
+
+            alerBtn.click(function (e) {
+                // console.log('this', this);
+                // console.log('$(this)', $(this));
+
+                let nowBtn = $(this);
+                console.log('nowBtn', nowBtn);
+                let divText = nowBtn.attr('data-div');
+                let strongText = nowBtn.attr('data-strong');
+
+                let tmpText = `
+                <div class="alert ${divText} alert-dismissible">
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                <strong>${strongText}</strong> Indicates an important action.
+                </div>
+                `;
+                alertBox.append(tmpText);
+
+            })
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>
