@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        h3 {
+            font-weight: bold;
+            text-align: center;
+            padding-top: 5px;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            width: 30%;
+            border-radius: 12px;
+            border: 1px solid rgb(172, 156, 177);
+            background-color: rgb(127, 116, 138);
+
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container mt-3">
+
+        <h3>基本資料</h3>
+        <div class="row g-3 justify-content-center">
+            <div class="col-4">
+                <label for="First name" class="form-label" style="color: white;">姓名</label>
+                <input type="text" class="form-control" placeholder="名" aria-label="name">
+            </div>
+            <div class="col-4">
+                <label for="First name" class="form-label">&nbsp;</label>
+                <input type="text" class="form-control" placeholder="姓" aria-label="name">
+            </div>
+        </div>
+        <div class="row g-3 mt-2 justify-content-center">
+            <div class="col-4 ">
+                <label for="id" class="form-label" style="color: white;">身分證字號</label>
+                <input type="text" class="form-control" id="id">
+            </div>
+            <div class="col-4">
+                <label for="phone" class="form-label" style="color: white;">連絡電話</label>
+                <input type="text" class="form-control" id="phone" placeholder="09xx-xxx-xxx">
+            </div>
+        </div>
+        <div class="row g-3 mt-2 justify-content-center">
+            <div class="col-8">
+                <label for="email" class="form-label" style="color: white;">Email</label>
+                <input type="text" class="form-control" id="email">
+            </div>
+        </div>
+        <div class="row g-3 mt-2 justify-content-center">
+            <div class="col-8">
+                <label for="Address" class="form-label " style="color: white;">地址</label>
+                <input type="text" class="form-control" id="Address">
+            </div>
+        </div>
+        <div class="row g-3 mt-2 justify-content-center">
+            <div class="col-4">
+                <label for="inputState" class="form-label" style="color: white;">最高學歷</label>
+                <select id="inputState" class="form-select">
+                    <option selected>選擇...</option>
+                    <option>國中</option>
+                    <option>高中</option>
+                    <option>大學</option>
+                    <option>研究所</option>
+                </select>
+            </div>
+            <div class="col-4">
+                <label for="schoole" class="form-label" style="color: white;">畢業學校</label>
+                <input type="text" class="form-control" id="school">
+            </div>
+        </div>
+        <div class="row g-3 mt-2 justify-content-center">
+            <div class="col-8 mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label" style="color: white;">其他</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+        </div>
+        <div class="row g-3  justify-content-center">
+            <div class="col-8 mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck" style="color: white;">
+                        確認資料無誤
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row g-3  justify-content-center">
+            <div class="col-8 mb-3">
+                <a href="./login.html">
+                    <button type="submit" class="btn btn-primary">提交</button>
+                </a>
+            </div>
+        </div>
+        </form>
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- js or jqery -->
+    <script>
+        $(document).ready(function () {
+
+        });
+        // jquery end
+
+    </script>
+</body>
+
+</html>
