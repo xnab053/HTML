@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            background-color: rgb(255, 246, 232);
+        }
+
+        .container-h {
+            min-height: 90vh;
+        }
+
+        .container-card {
+            padding-top: 15vh;
+        }
+
+        iframe {
+            width: 95%;
+            height: 60vh;
+        }
+
+        h2,
+        h3,
+        h4 {
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#link1">Link1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#link2">Link2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#link3">Link3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#link4">Link4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#link5">Link5</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- container1 -->
+
+    <div id="link1"></div>
+    <div class="container-carousel">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/b1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/b2.jpg" alt="Chicago" class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/b3.jpg" alt="New York" class="d-block" style="width:100%">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        <!-- <div class="row">
+            <div class="col">
+
+            </div>
+        </div> -->
+    </div>
+
+    <!-- container1 end -->
+
+    <!-- container2 -->
+    <div id="link2"></div>
+    <div class="container-fluid mt-3">
+        <div class="row h-100 align-items-center">
+            <div class="col-12 col-lg-4 mt-3 mb-3">
+                <img class="rounded img-fluid" src="./images/a1.jpg" alt="" srcset="">
+            </div>
+            <div class="col-12 col-lg-4 mt-3 mb-3">
+                <img class="rounded img-fluid" src="./images/a2.jpg" alt="" srcset="">
+            </div>
+            <div class="col-12 col-lg-4 mt-3 mb-3">
+                <img class="rounded img-fluid" src="./images/a3.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- container2 end-->
+
+    <!-- container3 -->
+    <div id="link3"></div>
+    <div class="container-fluid container-h mt-3 container-card">
+        <div class="row justify-content-around align-items-center">
+            <div class="col-12 col-lg-4 text-center">
+                <div class="card mx-auto" style="width:500px">
+                    <img class="card-img-top" src="./images/p1.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h5 class="card-title">吉伊卡哇 （ちいかわ）</h5>
+                        <p class="card-text">
+                            吉伊卡哇(Chiikawa/ちいかわ)，不太懂說話，膽小且愛哭 ( 還是個內向、不善於表達自己的情感
+                            )，但是個心地非常善良又溫柔的小傢伙。住的房子是在超級可口酸奶送房抽獎活動中抽中的。這隻似熊非熊的生物到底是什麼呢？其實吉伊卡哇是一隻小白鼠。
+                        </p>
+                        <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <div class="col-12 col-lg-4 text-center">
+                <div class="card mx-auto" style="width:500px">
+                    <img class="card-img-top" src="./images/p2.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h5 class="card-title">小八貓（ハチワレ）</h5>
+                        <p class="card-text">
+                            小八貓（ハチワレ），又稱八字貓、小八。是以貓為原型。非常擅長說話，且人際關係、社交也非常拿手。個性較樂觀、開朗、正向，會為了想要的東西節儉，但非常喜歡跟朋友們分享食物。在吉伊卡哇故事中，小八扮演了非常重要的角色，那就是「翻譯」！
+                        </p>
+                        <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="col-12 col-lg-4 text-center">
+                <div class="card mx-auto" style="width:500px">
+                    <img class="card-img-top" src="./images/p3.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h5 class="card-title">兔兔（うさぎ）</h5>
+                        <p class="card-text">
+                            兔兔，又稱烏薩奇，是吉伊卡哇好友三人組之一，是以兔子為原型。個性非常活潑好動，充滿活力，而烏薩奇也是吉伊卡哇好友們中最無所畏懼的角色，看似神經大條，但卻很聰明。
+                        </p>
+                        <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="col-12 col-lg-4 text-center">
+                <div class="card mx-auto" style="width:500px">
+                    <img class="card-img-top" src="./images/p4.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h5 class="card-title">小桃鼠（モモンガ）</h5>
+                        <p class="card-text">小桃鼠，是以「飛鼠」作為角色原型。小小的身體、蓬鬆的尾巴，不斷試圖裝可愛、裝可憐來要求別人誇獎牠、哄牠。在故事中是個任性、理直氣壯的角色</p>
+                        <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <div class="col-12 col-lg-4 text-center">
+                <div class="card mx-auto" style="width:500px">
+                    <img class="card-img-top" src="./images/p5.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h5 class="card-title">海獺勇者（ラッコ）</h5>
+                        <p class="card-text">
+                            海獺勇者，角色原型就是「海獺」，是吉伊卡哇世界中的討伐排行榜冠軍，是被大家所崇拜且憧憬的角色。大家看到海獺勇者都會熱情的歡呼，用崇拜的眼神看著牠。
+                        </p>
+                        <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <div class="col-12 col-lg-4 text-center">
+                <div class="card mx-auto" style="width:500px">
+                    <img class="card-img-top" src="./images/p6.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h5 class="card-title">栗子饅頭（くりまんじゅう）</h5>
+                        <p class="card-text">
+                            栗子饅頭是個美食家，行為舉止就像個大叔，也是吉伊卡哇的前輩。經常會料理出美味的下酒菜來配酒，喝的時候會向人喝完啤酒後爽吐一口「哈~~」的聲音。
+                        </p>
+                        <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <!-- container3 end-->
+
+    <!-- container4 youtube -->
+    <div id="link4"></div>
+    <div class="container-fluid container-h container-card">
+        <div class="row text-center align-items-center">
+            <div class="col-12 col-lg-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/pbQQAwSQUX4?si=Px6mNyLF9_L_N971"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="col-12 col-lg-6 text-start">
+                <h3>《吉伊卡哇Chiikawa》（日語：ちいかわ）</h3>
+                全名是《又小又可愛的傢伙》，本作的主角「吉伊卡哇」最初是在ナガノ的Twitter帳號上以「希望變成這樣的樣子」的說明一起被描繪出來，被描繪成一個二頭身動物的角色，從2017年左右開始被公開。2020年1月開始在X(原twitter)上連載短篇故事漫畫，到了2022年4月製成了短篇動畫。
+
+                吉伊卡哇系列故事在描繪主角ちいかわ與他們好朋友們小八貓以及烏薩奇兔子的日常生活。大部分的角色們是不太會說話的，大多以呀、嗯、哈…等等來表達，獨特的表達方式被稱為「吉伊卡哇構文」（ちいかわ構文），而劇中的「小八貓」是全劇裡重要的翻譯官，被網友戲稱「最會說人話的角色」。
+
+                在劇情中，主要角色們的生活環境是必須透過「工作賺取收入」並且過生活，雖然看似療癒可愛，快被角色們萌化了的感覺，但其實仔細思考吉伊卡哇背後的故事，其實跟真實世界的生活很相像，只是透過一種「可愛」的方式來表達罷了。他們努力生活的痕跡讓人感同身受，在另一個相似而獨立的奇幻世界中，吉伊卡哇和他的夥伴們成為繁忙生活中的小小出口，治癒心靈，也讓人思考著生活。<br>
+                <br>
+                <h4>吉伊卡哇作者</h4>
+                吉伊卡哇的作者ナガノ（Nagano）為日本的插畫家和漫畫家，擅長創作出自然柔和的線條，讓人們沉浸在輕鬆自在的角色中。她細膩而獨特的風格，以及描繪世界不僅僅是可愛卻不合理之處的故事，廣受各個年齡層男女的支持。在Twitter上已經有超過100萬名粉絲。
+                ナガノ作為插畫師，她參與了企業和藝術家的各種合作項目，包括地方政府角色設計等，活躍在各個領域。除了吉伊卡哇之外，《自嘲熊Joke
+                Bear(ナガノのくま)》也同樣出自Nagano之手，這兩部作品的火爆程度可以說是一上架就會掀起一波搶購潮。<br>
+                <br>
+                <h4>吉伊卡哇世界觀</h4>
+                吉伊卡哇的世界充滿了豐富的自然景觀，如森林和草原，周圍有巨大的食物，食物像植物一樣自然生長或湧出。與此同時，住宅和商店林立，存在貨幣經濟和網路，是一個非常文明化的世界。這個世界的居民，即吉伊卡哇，從事著“除草”和“討伐”等工作，靠著這些工作的報酬謀生。所有工作都是由一種名為“鎧甲先生”的種族提供的，鎧甲先生們還通過經營商店等方式參與到吉伊卡哇的生活中。此外，還存在各種活動和取得資格的考試，根據資格的不同可以提高報酬的金額，甚至可以喝酒。這個世界還棲息著除了吉伊卡哇和鎧甲先生以外的奇特生物，其中一些可能對人造成危害(擬態型)。此外，還存在一些可以說話的生物，如面具奇美拉和大力獸。
+            </div>
+        </div>
+    </div>
+    <!-- container4 end-->
+
+    <!-- container5 google map-->
+    <div id="link5"></div>
+    <div class="container-fluid container-h container-card">
+        <div class="row">
+            <div class="col-12 col-lg-5 mt-4 mb-3">
+                <h3>「Chiikawa POP UP STORE 台北」吉伊卡哇華山快閃店</h3>
+
+                <h6>【活動簡介】
+
+                    風靡全日本的超人氣IP「吉伊卡哇」即將於華山1914舉辦獨立快閃！準備好迎接這群小可愛了嗎？
+
+                    本次活動承襲日本快閃規模，除了超合適拍照打卡的角色牆之外，吉伊卡哇與夥伴們將化身高達2公尺的圓滾滾巨型氣球，現身展場與大家會面，讓粉絲們能零距離感受到震撼級的可愛，體驗最療癒的展覽空間！
+
+                    此外，快閃店將販售各式主打商品，特別是「生日系列」主題玩偶吊飾，以及玩偶、扭蛋、款式豐富的生活周邊、服飾及文具小物等，全都等大家來收集！</h6>
+                <br>
+
+                <p>■「Chiikawa POP UP STORE 台北」吉伊卡哇華山快閃店<br>
+                    2024.6.14(五) - 2024.7.28(日) 11:00-20:00 <br>
+                    華山1914文化創意產業園區 中2館 <br>
+                    (台北市中正區八德路一段1號)
+                </p>
+                <br>
+
+                <h5>會員資料</h5>
+                <form action="/action_page.php">
+                    <div class="mb-3 mt-3">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter Name" name="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mobile">Mobile:</label>
+                        <input type="text" class="form-control" id="mobile" placeholder="Enter Mobile" name="mobile">
+                    </div>
+
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-lg-7 mt-3 mb-3">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.673487045366!2d121.52803479999999!3d25.0451525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a97ad152f70f%3A0x6546dc141dae7bd5!2zMTAw5Y-w5YyX5biC5Lit5q2j5Y2A5YWr5b636Lev5LiA5q61MeiZnw!5e0!3m2!1szh-TW!2stw!4v1719366652720!5m2!1szh-TW!2stw"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- container5 end-->
+
+    <!-- container6 form -->
+    <!-- container6 end-->
+
+    <!-- footer -->
+    <div class="container-fluid mt-5 mb-5">
+        <div class="row">
+            <div class="col text-center">
+                Copyright © 2024 Apple Inc. All rights reserved.
+            </div>
+        </div>
+    </div>
+    <!-- footer end-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- js or jqery -->
+    <script>
+        $(document).ready(function () {
+
+        });
+        // jquery end
+
+    </script>
+</body>
+
+</html>
