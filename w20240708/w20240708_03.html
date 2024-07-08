@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        img {
+            width: 150px;
+
+        }
+
+        tr,
+        td {
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        p {
+            font-size: 22px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th width="10%"></th>
+                    <th width="20%">品項</th>
+                    <th width="20%">價錢</th>
+                    <th width="10%">數量</th>
+                    <th>金額</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td><img src="./images/p1.jpg" alt=""></td>
+                    <td>35</td>
+                    <td>
+                        <input id="item1Count" class="form-control" type="number" name="" id="" value="1"
+                            data-price="35" min="0" max="10">
+                    </td>
+                    <td id="item1Total">35</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td><img src="./images/p2.jpg" alt=""></td>
+                    <td>60</td>
+                    <td>
+                        <input id="item2Count" class="form-control" type="number" name="" id="" value="1"
+                            data-price="60" min="0" max="10">
+                    </td>
+                    <td id="item2Total">60</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td><img src="./images/p3.jpg" alt=""></td>
+                    <td>65</td>
+                    <td>
+                        <input id="item3Count" class="form-control" type="number" name="" id="" value="1"
+                            data-price="65" min="0" max="10">
+                    </td>
+                    <td id="item3Total">65</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="d-grid mt-3">
+            <button type="button" class="btn btn-outline-success btn-block">小計</button>
+        </div>
+        <div class="mt-3">
+            <p>總金額 :</p>
+        </div>
+    </div>
+
+    <script>
+        orders = [
+            {
+                'id': 1,
+                'name': '紅茶',
+                'pic': '01.jpg',
+                'price': 35,
+                'count': 1,
+            },
+            {
+                'id': 2,
+                'name': '檸檬茶',
+                'pic': '02.jpg',
+                'price': 60,
+                'count': 1,
+            },
+            {
+                'id': 3,
+                'name': '奶茶',
+                'pic': '03.jpg',
+                'price': 65,
+                'count': 1,
+            },
+        ];
+
+        const item1Count = document.getElementById('item1Count');
+        const item1Total = document.getElementById('item1Total');
+        const item2Count = document.getElementById('item2Count');
+        const item2Total = document.getElementById('item2Total');
+        const item3Count = document.getElementById('item3Count');
+        const item3Total = document.getElementById('item3Total');
+
+        item1Count.addEventListener('change', function () {
+            console.log('change ok');
+            let getDataPrice = Number(this.getAttribute('data-price'));
+            let getNumber = Number(this.value);
+            console.log('getDataPrice', getDataPrice);
+            console.log('getDataPrice typeof', typeof (getDataPrice));
+            console.log('getNumber', getNumber);
+            console.log('getNumber typeof', typeof (getNumber));
+            let tmpTotal = getDataPrice * getNumber;
+            item1Total.innerText = tmpTotal;
+        });
+
+        item2Count.addEventListener('change', function () {
+            console.log('change ok');
+            let getDataPrice = Number(this.getAttribute('data-price'));
+            let getNumber = Number(this.value);
+            console.log('getDataPrice', getDataPrice);
+            console.log('getDataPrice typeof', typeof (getDataPrice));
+            console.log('getNumber', getNumber);
+            console.log('getNumber typeof', typeof (getNumber));
+            let tmpTotal = getDataPrice * getNumber;
+            item2Total.innerText = tmpTotal;
+        });
+
+        item3Count.addEventListener('change', function () {
+            console.log('change ok');
+            let getDataPrice = Number(this.getAttribute('data-price'));
+            let getNumber = Number(this.value);
+            console.log('getDataPrice', getDataPrice);
+            console.log('getDataPrice typeof', typeof (getDataPrice));
+            console.log('getNumber', getNumber);
+            console.log('getNumber typeof', typeof (getNumber));
+            let tmpTotal = getDataPrice * getNumber;
+            item3Total.innerText = tmpTotal;
+        });
+
+        console.log('orders', orders);
+    </script>
+</body>
+
+</html>
